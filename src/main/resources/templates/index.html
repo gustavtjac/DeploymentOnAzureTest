@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <thead>
+
+    </thead>
+    <tbody th:each="gamingpc : ${gamingListe}">
+    <td th:text="${gamingpc.name}"></td>
+    <td th:text="${gamingpc.getGPU()}"></td>
+    <td th:text="${gamingpc.price}"></td>
+    </tbody >
+
+
+
+
+</table>
+</body>
+</html>
